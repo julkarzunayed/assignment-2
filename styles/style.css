@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* font-family: "Quicksand", serif; */
+/* font-family: "Raleway", serif; */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    font-family: "Quicksand", serif;
+}
+html{
+    font-size: 16px;
+}
+
+/* Root Styles */
+:root{
+    --primary-color-orange:#FEA301;
+    --primary-color-skyblue: #01ACFD;
+}
+
+
+
+
+/* Shared Styles */
+.display-flex{
+    display: flex;
+}
+.btn-primary{
+  width: 197px;  
+  height: 50px;
+  border-radius: 12px;
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.25rem;
+  background-color: black;
+}
+
+.banner-footer-description{
+    color: black;
+    font-size: 1.25rem;
+}
+
+/* Navbar related Styles */
+
+.navbar{
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1159px;
+    margin: 0 auto;
+    /* border: solid saddlebrown 1px; */
+}
+.nav-title-box{
+    align-items: center;
+    /* border: solid saddlebrown 1px; */
+}
+.nav-title-box img{
+    width: 46px;
+}
+.nav-title{
+    font-weight: bold;
+    font-size: 2rem;
+    color: black;
+    margin-left: 11px;
+}
+.nav-list>ul {
+    /* max-width: 387px; */
+    list-style: none;
+    gap: 32px;
+    /* border: solid saddlebrown 1px; */
+}
+.nav-list ul li a{
+    text-decoration: none;
+}
+
+#home{
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--primary-color-orange);
+}
+#about{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--primary-color-skyblue) ;
+}
+#facilities{
+    font-size: 1.25rem;
+    font-weight:500;
+    color:#05D4DF ;
+}
+#admission{
+    font-size: 1.25rem;
+    font-weight:500;
+    color:#5D58EF;
+}
+#navbar-btn{
+ background-color: var(--primary-color-orange);
+}
+#navbar-icon{
+    display: none;
+}
+
+/* Banner Related styles */
+
+.banner{
+    max-width:1159px;
+    margin: 0 auto ;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-content{
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.banner-title{
+    font-size: 3.5rem ;
+    font-weight: bold;
+    color: black;
+}
+
+#banner-title-orange{
+    color: var(--primary-color-orange);
+}
+#banner-title-skyblue{
+    color: var(--primary-color-skyblue);
+}
+
+.banner-img{
+    max-width: 469px;
+}
+.banner-img img{
+    width: 100%;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    .html{
+        font-size: 9.143px;
+    }
+    .navbar{
+        padding:18px ;
+        border: solid .5px var(--primary-color-orange);
+    }
+    /* display None */
+    .nav-title, 
+    .nav-list, 
+    #navbar-btn{
+        display: none;
+    }
+    /* Flex Direction column-reverse */
+    .banner{
+        flex-direction: column-reverse;
+    }
+    /* text align center */
+    .banner-content{
+        text-align: center;
+        align-items: center;
+    }
+
+    #navbar-icon{
+        display: block;
+    }
+    
+}
