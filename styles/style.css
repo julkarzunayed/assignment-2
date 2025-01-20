@@ -48,6 +48,12 @@ html{
     color: black;
     font-size: 1.25rem;
 }
+.section-title{
+    font-size: 2.87rem;
+    color: #000000;
+    font-weight: bold;
+}
+
 
 /* Navbar related Styles */
 
@@ -143,8 +149,67 @@ html{
 .banner-img img{
     width: 100%;
 }
+.standard-curriculum{
+    border: solid white 1px;
 
+}
+/* Standard curriculum Style */
+.standard-curriculum{
+    background: url(../assets/bg.png);
+    background-size: contain;
+}
+.main-container{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1159px;
+    margin: 60px auto 80px auto ;
+    
+    /* border: solid saddlebrown 1px; */
+}
+.card-container{
+    width: 100%;
+    gap: 20px;
+    /* justify-content: space-evenly; */
+    /* border: solid saddlebrown 1px; */
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 477px;
+    max-width: 368px;
+    margin: 80px auto;
+    align-items: center;
+    border-radius: 19px;
+    /* gap: 10px; */
+    padding: 41px;
+    /* border: solid saddlebrown 1px; */
+    justify-content: space-evenly;
+    box-shadow: inset 0 0 10px 1px #00000015;
+    /* box-shadow:; */
+}
+.card-img-box{
+    /* border: solid saddlebrown 1px; */
+}
+.card-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #202020;
+}
+.standard-curriculum-bottom-btn{
+    gap:10px ;
+}
 
+.standard-curriculum-bottom-btn div{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    background-color: var(--primary-color-orange);
+}
+#card-1{
+    /* border: solid 05px #DEF5FF60 ; */
+    background: linear-gradient( #DEF5FF, white , white, white );
+}
 
 @media screen and (max-width: 576px) {
     .html{
