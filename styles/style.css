@@ -16,9 +16,9 @@ body{
     
     font-family: "Quicksand", serif;
 }
-html{
+/* html{
     font-size: 16px;
-}
+} */
 
 /* Root Styles */
 :root{
@@ -160,7 +160,7 @@ html{
 }
 .main-container{
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     max-width: 1159px;
     margin: 60px auto 80px auto ;
@@ -196,35 +196,77 @@ html{
     font-weight: bold;
     color: #202020;
 }
+.card p{
+    text-align: center;
+}
+
+#card-1{
+    /* border: solid 05px #DEF5FF60 ; */
+    background: linear-gradient( #DEF5FF, white , white, white );
+}
+#card-2{
+    background: linear-gradient( #FFF4DC, white , white, white );
+
+}
+#card-3{
+    background: linear-gradient( #F2E8FF, white , white, white );
+
+}
+.card-btn{
+    margin-top: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    background: none;
+}
+#card-btn-1{
+    color: #64C8FF;
+}
+#card-btn-2{
+    color: #F0AA00;
+}
+#card-btn-3{
+    color:#8700FF ;
+}
+
 .standard-curriculum-bottom-btn{
     gap:10px ;
 }
 
 .standard-curriculum-bottom-btn div{
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    font-size: 1.5rem;
     border-radius: 50%;
     height: 60px;
     width: 60px;
     background-color: var(--primary-color-orange);
 }
-#card-1{
-    /* border: solid 05px #DEF5FF60 ; */
-    background: linear-gradient( #DEF5FF, white , white, white );
-}
 
 @media screen and (max-width: 576px) {
-    .html{
-        font-size: 9.143px;
+    html{
+        font-size: 12px;
     }
     .navbar{
         padding:18px ;
         border: solid .5px var(--primary-color-orange);
     }
     /* display None */
+    .standard-curriculum-bottom-btn,
     .nav-title, 
     .nav-list, 
     #navbar-btn{
         display: none;
     }
+    /* Flex Direction Column */
+    .card-container{
+        flex-direction: column;
+    }
+
     /* Flex Direction column-reverse */
     .banner{
         flex-direction: column-reverse;
@@ -237,6 +279,11 @@ html{
 
     #navbar-icon{
         display: block;
+    }
+    .card{
+        height: auto;
+        width: auto;
+        margin: 0 auto;
     }
     
 }
