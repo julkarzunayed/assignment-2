@@ -62,9 +62,18 @@ body{
     color: #000000;
     font-weight: bold;
 }
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
 /* Hover Effect related Styles */
-
-
+button:hover {
+    transform: scale(1.03);
+}
+a:hover{
+    font-weight:bolder;
+}
 
 
 
@@ -77,6 +86,7 @@ body{
     max-width: 1159px;
     margin: 0 auto;
     background-color: #ffffff;
+    z-index: 5;
     /* border: solid saddlebrown 1px; */
 }
 .nav-title-box{
@@ -247,6 +257,7 @@ body{
     background: linear-gradient( #F2E8FF, white , white, white );
 
 }
+
 .card-btn{
     margin-top: 10px;
     border: none;
@@ -371,10 +382,10 @@ body{
     left: 0px;
 
 }
-#stories-btn-bg-green{
+.stories-btn-bg-green{
     background-color: #95B226;
 }
-#stories-btn-bg-blue{
+.stories-btn-bg-blue{
     background-color: #5D58F0;
 }
 
