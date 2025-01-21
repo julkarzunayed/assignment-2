@@ -121,6 +121,7 @@ body{
  background-color: var(--primary-color-orange);
 }
 #navbar-icon{
+    font-size: 2.5rem;
     display: none;
 }
 
@@ -354,12 +355,72 @@ body{
 
 .our-stories>.btn-box{
     text-align: center;
+    padding-bottom: 60px ;
     /* border: solid 01px #010507 ; */
     
 }
-/* .small-box{
-   
-} */
+/* Footer Related styles */
+
+footer{
+    background-color: var(--primary-color-skyblue);
+}
+.footer-content-box{
+    justify-content: space-between;
+    max-width: 1160px;
+    padding: 90px 91px 174px 20px ;
+    margin: 0 auto;
+    color: white;
+}
+
+.title-box{
+    margin-top: 32px;
+    max-width: 400px;
+    /* border: solid 01px #010507 */
+}
+.footer-title{
+    font-size: 2.687rem;
+    font-weight: bold;
+    line-height: 40px;
+    margin-left:10px ;
+}
+.footer-description{
+    margin-top:36px ;
+    font-size: 1.25rem;
+    line-height: 25px;
+}
+.about-box{
+    margin-top: 32px;
+}
+.about-box ul{
+    height: 72% ;
+    margin-top: 32px;
+    justify-content: space-between;
+    flex-direction: column;
+    /* border: solid 01px #010507 */
+}
+.about-box ul li{
+    list-style: none;
+}
+.about-box ul li a{
+    text-decoration: none;
+    color: white;
+    padding-left: 5px;
+}
+
+.footer-subtitle{
+    font-size: 1.5rem ;
+    font-weight: bold;
+}
+.social-icon-box{
+    margin-top: 32px;
+    /* border: solid 01px #010507 */
+}
+.social-icons {
+    /* color: red; */
+    word-spacing: 5px;
+    font-size: 2rem;
+    margin-top:32px ;
+}
 
 
 
@@ -386,7 +447,8 @@ body{
         display: none;
     }
     /* Flex Direction Column */
-    .card-container{
+    .card-container,
+    .footer-content-box{
         flex-direction: column;
     }
 
